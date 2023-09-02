@@ -1,0 +1,231 @@
+/* Updated CSS for responsiveness */
+:root {
+    --color-primary: #1B4472;
+    --color-secondary: #255B99;
+    --color-accent: #EF743B;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1B4472;
+    display: flex; /* Use flex to center the container */
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+}
+
+.logo img{
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    width: 100%; /* Adjust to your preferred width */
+    max-width: 1200px; /* Limit the maximum width if desired */
+}
+.coluna-esquerda {
+    flex: 1;
+    background-color: #255B99;
+    padding: 80px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.coluna-direita {
+    flex: 1;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+th {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #1B4472;
+}
+
+td {
+    padding: 15px;
+    border-bottom: #1B4472 solid 3px;
+}
+
+input {
+    
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input:focus {
+    border: 3px solid #EF743B;
+    outline: none;
+}
+
+label {
+    font-size: 20px;
+}
+
+td button {
+    color: white;
+    border-style: none;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px;
+    outline: none;
+    background-color: #ff1c1c;
+    border-radius: 100%;
+    transition: transform 0.3s ease;
+}
+
+td button:hover {
+    transform: scale(1.1);
+}
+
+.scrollable {
+    max-height: 51vh;
+    overflow-y: auto;
+}
+
+#exportarBotao {
+    margin: 10px;
+    color: white;
+    border-style: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EF743B;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.butoes{
+    display: flex;
+    
+}
+
+#adicionarBotao {
+    margin: 10px;
+    color: white;
+    border-style: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #EF743B;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#adicionarBotao:hover {
+    transform: scale(1.1);
+}
+
+#exportarBotao:hover {
+    transform: scale(1.1);
+    background-color: #0f9036;
+    color: white;
+}
+
+#grupoProduto {
+   margin-top: 10px;
+   margin-bottom: 10px;
+  
+}
+
+#nomeProduto {
+    margin-left: 1px;margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+#valorProduto {
+    margin-left: 10px;margin-top: 10px;
+    margin-bottom: 10px;
+}
+.container h1{
+
+    font-weight: 900;
+    font-size: 30px;
+    color: white;
+}
+span{
+    font-weight: bolder;
+    font-size: 30px;
+    color: #EF743B;
+}
+
+@media screen and (max-width: 768px) {
+
+    #valorProduto {
+        margin-left: 0px;
+    }
+
+    .coluna-esquerda{
+
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1{
+       font-size: 15px;
+       
+    }
+
+    .butoes{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+
+        
+    }
+
+    #adicionarBotao{
+        height: 50px;
+        width: 150px;
+        font-size: 14px;
+        
+    }
+
+    #exportarBotao{
+        height: 50px;
+        width: 150px;
+        font-size: 14px;
+
+    }
+}
+
+select {
+    margin-left: 12px;
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  select:hover {
+    background-color: #f5f5f5;
+  }
+  
+  select:focus {
+    
+    outline: none;
+    border-color: #EF743B;
+  }

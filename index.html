@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cadastro de Produtos">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="coluna-esquerda">
+             <!--<div class="LOGO"><img height="100px" src="/IMG/logo.svg" alt="" srcset=""></div></h1>-->
+            <h1>CADASTRO DE <span>PRODUTOS</span></h1>
+            <div>
+                <label for="nomeProduto">Nome do Produto:</label>
+                <input type="text" id="nomeProduto">
+            </div>
+            <div>
+                <label for="grupoProduto">Grupo do Produto:</label>
+                <input type="text" id="grupoProduto">
+            </div>
+            <div>
+                <label for="valorProduto">Valor do Produto:</label>
+                <input type="number" id="valorProduto">
+                
+            </div>
+            <div>
+                <label for="tipoUnidade">Tipo de Unidade:</label>
+                <select id="tipoUnidade">
+                    <option value="kg">KG</option>
+                    <option value="un">UN</option>
+                    <option value="vr">VR</option>
+                </select>
+            </div>
+            <div class="butoes">
+                <button id="adicionarBotao">Adicionar Produto</button>
+                <button id="exportarBotao">Baixar Excel</button>
+            </div>
+        </div>
+
+        <!-- Tabela para exibir os produtos cadastrados -->
+        <div class="coluna-direita">
+            <div class="scrollable">
+                <table id="tabelaProdutos">
+                    <thead>
+                        <tr>
+                            <th>Nome do Produto</th>
+                            <th>Grupo do Produto</th>
+                            <th>Valor do Produto</th>
+                            <th>Tipo de Unidade</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Aqui serão inseridos os produtos cadastrados -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
